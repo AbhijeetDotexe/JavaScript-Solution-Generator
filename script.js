@@ -1,5 +1,5 @@
 const apiUrl = "https://api.openai.com/v1/chat/completions"
-const apiKey = "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" 
+const apiKey = "Insert Your API Key here" 
 
 async function postData(){
     const message = document.getElementById('message').value
@@ -13,7 +13,6 @@ async function postData(){
         method: "POST",
         // mode: "no-cors",
         headers: {
-        //    "Access-Control-Allow-Origin": "*", //BAD IDEA
             "Content-Type": "application/json",
             "Authorization": `Bearer ${apiKey}`
 
